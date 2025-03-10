@@ -1,2 +1,2 @@
 # basicWebMap
-A basic web map for test that shows the coordinates 
+A basic web map for test that when user clicks any where on map a prompt shows the coordinates  
