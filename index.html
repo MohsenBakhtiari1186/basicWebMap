@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>basicWebMap</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+        .coordinates-display {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        @media only screen and (max-width: 600px) {
+            #map { height: 400px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="coordinates-display">
+        <strong>basicWebMap - Click anywhere to get coordinates</strong>
+        <div id="coordinates">Longitude: -, Latitude: -</div>
+    </div>
+    <div id="map"></div>
+    <script src="script.js"></script>
+</body>
+</html>
