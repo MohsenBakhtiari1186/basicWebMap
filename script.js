@@ -3,8 +3,9 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibW9oc2VuYmFraHRpYXJpMTg2IiwiYSI6ImNscHF6N3Zla
 const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
-    center: [0, 0],
-    zoom: 2
+    center: [53.688, 32.428],
+    zoom: 5,
+    maxBounds: [[44.0, 25.0], [63.5, 40.0]]
 });
 
 map.on('click', function(e) {
